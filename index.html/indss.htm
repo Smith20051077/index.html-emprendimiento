@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BARBERSHOP 🧔🏿 MAMERCO</title>
+  <link rel="icon" href="/TalentoMoi/img/logo.2.png" type="image/png" />
+  <link rel="stylesheet" href="/stl.css" />
+</head>
+
+<body>
+  <header>
+    <img src="/logo barber.png" alt="Logo de BARBERSHOP MOISES" />
+    <h1>💈🪒 BARBERSHOP 🧔🏿 MOISES</h1>
+    <p>Explora y descubre los servicios que tenemos para ti.</p>
+  </header>
+
+  <nav class="navbar" aria-label="Barra de navegación principal">
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <label for="menu-toggle" class="menu-icon">&#9776; Menú</label>
+    <ul class="nav-list">
+      <li><a href="#inicio">Inicio</a></li>
+      <li><a href="#galeria">Galería</a></li>
+      <li><a href="#membresias">Membresías</a></li>
+      <li><a href="#contacto">Agenda tu cita</a></li>
+      <li><a href="#final">Final</a></li>
+    </ul>
+  </nav>
+
+  <main>
+  
+<section id="inicio" class="seccion-inicio-video">
+  <video autoplay muted loop class="fondo-video">
+    <source src="/img/barberia.mp4" type="video/mp4">
+  </video>
+  <div class="contenido">
+    <h2>💈 Bienvenido a <em>MAMERCO</em></h2>
+    <p>Tu barbería de confianza con estilo único y precios accesibles.</p>
+  </div>
+</section>
+
+    <!-- Membresías -->
+    <section id="membresias">
+      <h2>Membresías Exclusivas</h2>
+
+      <article class="membresia cobre">
+        <h3>🥉 Cobre</h3>
+        <p>Precio: $15.000</p>
+        <p>Incluye corte de cabello básico</p>
+      </article>
+
+      <article class="membresia plata">
+        <h3>🥈 Plata</h3>
+        <p>Precio: $25.000</p>
+        <p>Incluye corte de cabello y barba</p>
+      </article>
+
+      <article class="membresia oro">
+        <h3>🥇 Oro</h3>
+        <p>Precio: $40.000</p>
+        <p>Incluye corte, barba y limpieza facial con mascarilla</p>
+      </article>
+    </section>
+
+    <!-- Galería -->
+    <section id="galeria">
+      <h2>Galería de Fotos</h2>
+      <p>Estilos modernos y clásicos para cada ocasión</p>
+
+      <div class="galeria-imagenes">
+        <img src="/corte....1.webp" alt="Corte afro 1" />
+        <img src="/corte....2.jpg" alt="Corte afro 2" />
+        <img src="/corte....3.jpg" alt="Corte afro 3" />
+        <img src="/corte....4.jpg" alt="Corte afro 4" />
+        <img src="/corte....5.webp" alt="Corte afro 5" />
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto">
+      <h2>Agenda tu cita</h2>
+      <ul>
+        <li><strong>WhatsApp:</strong>
+          <a href="https://wa.me/573001234567?text=Hola%20me%20interesa%20un%20servicio%20de%20belleza" target="_blank">Enviar mensaje</a>
+        <a href="https://wa.me/+573137784411/?text=Hola Estoy interesado en tus servicios." target="_blank">WhatsApp</a>
+        <br>
+        <strong>Facebook:</strong> BARBERIAMAMERCO
+        <br>
+        <strong>Teléfono:</strong>
+        <a href="tel:3226680768">Llámanos</a>
+        <br>
+        <strong>Correo:</strong>
+        <a href="mailto:moi130406@gmail.com">Correo electrónico</a>
+      </ul>
+    </section>
+
+    <!-- Tabla de trabajadores -->
+    <section>
+      <h2>Nuestro equipo</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Profesión</th>
+            <th>Ocupación</th>
+            <th>Correo</th>
+            <th>Teléfono</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Moises</td>
+            <td>Ing. Sistemas</td>
+            <td>Barbero</td>
+            <td><a href="mailto:moi130406@gmail.com">Email</a></td>
+            <td><a href="tel:3226680768">Llamar</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+   
+<!-- Formulario de contacto -->
+<section id="formulario-contacto" data-aos="fade-up">
+  <h2>Contáctanos</h2>
+  <form method="get" action="https://www.facebook.com" class="formulario">
+    <label for="nombre">Nombre completo:</label>
+    <input type="text" id="nombre" name="nombre" required />
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" min="18" max="100" required />
+
+    <label for="correo">Correo:</label>
+    <input type="email" id="correo" name="correo" required />
+
+    <label for="telefono">Teléfono:</label>
+    <input type="tel" id="telefono" name="telefono" pattern="[0-9]{10}" required />
+
+    <label for="archivo">Cargar archivo:</label>
+    <input type="file" id="archivo" name="archivo" />
+
+    <label for="password">Contraseña:</label>
+    <input type="password" id="password" name="password" required />
+
+    <input type="submit" value="Enviar" class="btn-enviar" />
+  </form>
+</section>
+
+<a href="https://wa.me/+573226680768?text=¡Hola!%20Estoy%20interesado%20en%20más%20información" 
+   class="whatsapp-float" target="_blank" aria-label="Chat en WhatsApp">
+  <img src="/1384023.png" alt="WhatsApp" />
+</a>
+
+  <footer id="final">
+    <p>&copy; 2025 BARBERSHOP MAMERCO | Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>

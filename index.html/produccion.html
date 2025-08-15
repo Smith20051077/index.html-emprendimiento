@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>🎵 Frocol_Record</title>
+  <link rel="stylesheet" href="/musica.css" />
+  <link rel="icon" href="favicon.png" />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">Frocol_Record</div>
+    <nav class="nav" id="nav">
+      <a href="#inicio">Inicio</a>
+      <a href="#servicios">Servicios</a>
+      <a href="#artistas">Artistas</a>
+      <a href="#galeria">Galería</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <button class="menu-toggle" id="menu-toggle">☰</button>
+  </header>
+
+  <section id="inicio" class="hero">
+    <video autoplay muted loop class="hero-video">
+      <source src="studio.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h1>🎧 Bienvenido a <span>Frocol_Record</span></h1>
+      <p>Donde nace el sonido de tus sueños</p>
+    </div>
+  </section>
+
+  <section id="servicios" data-aos="fade-up">
+    <h2>🎼 Servicios</h2>
+    <div class="servicios-grid">
+      <div class="servicio">
+        <h3>Grabación Profesional</h3>
+        <p>Estudio con tecnología de punta para grabación vocal e instrumental.</p>
+      </div>
+      <div class="servicio">
+        <h3>Producción Musical</h3>
+        <p>Creación y mezcla de beats, arreglos, y composición.</p>
+      </div>
+      <div class="servicio">
+        <h3>Mastering</h3>
+        <p>Potencia tu música al más alto nivel con nuestro mastering profesional.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="artistas" data-aos="fade-right">
+    <h2>🎤 Nuestros Artistas</h2>
+    <div class="artistas">
+      <div class="artista">
+        <img src="artista1.jpg" alt="Artista 1" />
+        <h4>Luna Beats</h4>
+      </div>
+      <div class="artista">
+        <img src="artista2.jpg" alt="Artista 2" />
+        <h4>MC Groove</h4>
+      </div>
+      <div class="artista">
+        <img src="artista3.jpg" alt="Artista 3" />
+        <h4>DJ Fader</h4>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" data-aos="zoom-in">
+    <h2>📸 Galería</h2>
+    <div class="galeria">
+      <img src="/imagen #1 .jpg" alt="Estudio" />
+      <img src="/imagn #2.jpg" alt="Sesión en vivo" />
+      <img src="/" alt="Producción" />
+    </div>
+  </section>
+
+  <section id="contacto" data-aos="fade-up">
+    <h2>📬 Contáctanos</h2>
+    <form class="formulario">
+      <input type="text" placeholder="Nombre" required />
+      <input type="email" placeholder="Correo" required />
+      <textarea placeholder="Mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
+
+  <section id="videos" data-aos="fade-up">
+    <h2>🎥 Videos Destacados</h2>
+    <div class="videos-grid">
+      <video controls autoplay loop muted poster="portada.jpg">
+        <source src="/img/VID-2.mp4" type="video/mp4" />
+        Tu navegador no soporta el video.
+      </video>
+      <video controls autoplay loop muted poster="portada.jpg">
+        <source src="/video #1.mp4" type="video/mp4" />
+        Tu navegador no soporta el video.
+      </video>
+    </div>
+  </section>
+
+  <!-- Controles -->
+  <div class="controles">
+    <button id="toggleMode">🌓</button>
+    <button id="toggleMusic">🔊</button>
+  </div>
+
+  <!-- Música de fondo -->
+  <audio id="bg-music" loop>
+    <source src="ambient.mp3" type="audio/mpeg">
+  </audio>
+
+ <section id="redes-sociales" data-aos="fade-up">
+  <h2><i class="fas fa-share-alt"></i> Síguenos en nuestras redes sociales </h2>
+  <ul class="social-list">
+    <li>
+      <a href="https://www.facebook.com/impulsojoven" target="_blank" rel="noopener noreferrer" class="social-btn facebook">
+        <i class="fab fa-facebook-f"></i> Facebook
+      </a>
+    </li>
+    <li>
+      <a href="https://www.instagram.com/impulsojoven" target="_blank" rel="noopener noreferrer" class="social-btn instagram">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+    </li>
+    <li>
+      <a href="https://www.twitter.com/impulsojoven" target="_blank" rel="noopener noreferrer" class="social-btn twitter">
+        <i class="fab fa-twitter"></i> Twitter
+      </a>
+    </li>
+    <li>
+      <a href="https://www.youtube.com/impulsojoven" target="_blank" rel="noopener noreferrer" class="social-btn youtube">
+        <i class="fab fa-youtube"></i> YouTube
+      </a>
+  </ul>
+</section>
+
+
+  
+ <!-- Contenedor de partículas -->
+  <div id="particles-js"></div>
+<footer class="footer"></footer>
+    <div class="footer-content">
+        <div class="footer-copyright">
+            <p>© 2025 Frocol_Record. Todos los derechos reservados.</p>
+        </div>
+    </div>
+</footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@3/tsparticles.bundle.min.js"></script>
+  <script>
+    AOS.init();
+
+    document.getElementById("menu-toggle").addEventListener("click", () => {
+      document.getElementById("nav").classList.toggle("open");
+    });
+
+    // Modo oscuro
+    const toggleMode = document.getElementById("toggleMode");
+    toggleMode.addEventListener("click", () => {
+      document.body.classList.toggle("light");
+    });
+
+    // Música de fondo
+    const music = document.getElementById("bg-music");
+    const musicBtn = document.getElementById("toggleMusic");
+    let playing = false;
+    musicBtn.addEventListener("click", () => {
+      playing = !playing;
+      playing ? music.play() : music.pause();
+      musicBtn.textContent = playing ? "🔈" : "🔊";
+    });
+
+    // Partículas
+    tsParticles.load("particles-js", {
+      fullScreen: { enable: true, zIndex: -2 },
+      particles: {
+        number: { value: 50 },
+        color: { value: "#00f7ff" },
+        shape: { type: "circle" },
+        opacity: { value: 0.3 },
+        size: { value: { min: 1, max: 4 } },
+        move: { enable: true, speed: 1 }
+      },
+      interactivity: {
+        events: {
+          onHover: { enable: true, mode: "repulse" },
+          onClick: { enable: true, mode: "push" }
+        }
+      }
+    });
+
+
+  document.querySelectorAll('.social-btn').forEach(button => {
+    button.addEventListener('click', (e) => {
+      e.preventDefault(); // Evita redireccionar de inmediato
+
+      const red = button.getAttribute('data-red');
+
+      // Crear tooltip
+      const tooltip = document.createElement('div');
+      tooltip.className = 'tooltip show';
+      tooltip.innerText = `Abriendo ${red}...`;
+
+      // Añadir al botón
+      button.appendChild(tooltip);
+
+      // Quitar después de 2 segundos
+      setTimeout(() => {
+        tooltip.remove();
+        // Ahora sí redirecciona
+        window.open(button.href, '_blank');
+      }, 1500);
+    });
+  });
+
+  // Rutas de los sonidos (puedes cambiarlos por los tuyos)
+  const hoverSound = new Audio("https://cdn.pixabay.com/audio/2022/03/15/audio_f37ceba2b4.mp3");
+  const clickSound = new Audio("https://cdn.pixabay.com/audio/2022/03/15/audio_d398d6b05e.mp3");
+
+  document.querySelectorAll('.social-btn').forEach(button => {
+    button.addEventListener('mouseenter', () => {
+      hoverSound.currentTime = 0;
+      hoverSound.play();
+    });
+
+    button.addEventListener('click', (e) => {
+      e.preventDefault();
+      clickSound.currentTime = 0;
+      clickSound.play();
+
+      const red = button.getAttribute('data-red');
+
+      // Tooltip
+      const tooltip = document.createElement('div');
+      tooltip.className = 'tooltip show';
+      tooltip.innerText = `Abriendo ${red}...`;
+      button.appendChild(tooltip);
+
+      setTimeout(() => {
+        tooltip.remove();
+        window.open(button.href, '_blank');
+      }, 1500);
+    });
+  });
+  </script>
+</body>
+</html>

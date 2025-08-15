@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AFROLAB - Belleza Profesional</title>
+  <link rel="stylesheet" href="/style.css" />
+  <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <!-- Pantalla de carga -->
+  <div id="loader">
+    <div class="logo-loader">💇‍♀️ AFROLAB</div>
+  </div>
+
+  <header class="main-header glassmorph">
+    <div class="logo">💇‍♀️ AFROLAB</div>
+    <button class="menu-toggle" id="menu-btn" aria-label="Abrir menú">
+      <i data-lucide="menu"></i>
+    </button>
+  </header>
+
+  <nav class="mobile-nav glassmorph" id="mobile-nav">
+    <ul>
+      <li><a href="#servicios"><i data-lucide="scissors"></i> Servicios</a></li>
+      <li><a href="#galeria"><i data-lucide="image"></i> Galería</a></li>
+      <li><a href="#reserva"><i data-lucide="calendar"></i> Reservar</a></li>
+      <li><a href="#equipo"><i data-lucide="users"></i> Equipo</a></li>
+      <li><a href="#contacto"><i data-lucide="mail"></i> Contacto</a></li>
+    </ul>
+  </nav>
+
+<main class="container">
+  <section id="inicio" class="hero" data-aos="fade-up">
+    <h1>Transforma tu estilo con <span>AFROLAB</span></h1>
+    <p>Especialistas en belleza afro y estilo contemporáneo</p>
+    
+    <div class="botones-hero">
+      <a href="#reserva" class="btn-primary">Reserva tu cita</a>
+     
+    </div>
+  </section>
+</main>
+
+<section id="servicios" class="section fade-in" data-aos="fade-up">
+  <h2>Servicios</h2>
+  <div class="grid-cards">
+    <div class="card">
+      <i data-lucide="cut"></i>
+      <h3>Corte & Peinado</h3>
+      <p>Estilos afro, modernos y clásicos.</p>
+    </div>
+    <div class="card">
+      <i data-lucide="palette"></i>
+      <h3>Coloración</h3>
+      <p>Color, mechas y balayage vibrantes.</p>
+    </div>
+    <div class="card">
+      <i data-lucide="sparkles"></i>
+      <h3>Manicura & Pedicura</h3>
+      <p>Cuida tus manos y pies con estilo.</p>
+    </div>
+    <div class="card">
+      <i data-lucide="wand"></i>
+      <h3>Maquillaje Pro</h3>
+      <p>Para eventos especiales y sesiones.</p>
+    </div>
+  </div>
+</section>
+
+
+<script src="https://unpkg.com/lucide@latest"></script>
+<script>
+  lucide.createIcons();
+</script>
+
+    <section id="galeria" class="section fade-in" data-aos="fade-up">
+      <h2>Galería de Estilos</h2>
+      <div class="gallery">
+        <img src="/afro2.jpg" alt="Peinado Afro" />
+        <img src="/afro.webp" alt="Maquillaje Colorido" />
+        <img src="/afrooo.webp" alt="Manicura Decorativa" />
+        <img src="/peinado.webp" alt="Coloración Profesional" />
+      </div>
+    </section>
+
+    <section id="testimonios" data-aos="fade-up">
+      <h2>Testimonios</h2>
+      <div class="testimonial-slider">
+        <div class="testimonial">"Me encantó el resultado, profesionales de verdad." - Carolina</div>
+        <div class="testimonial">"Mi look cambió totalmente, ¡gracias AFROLAB!" - Mariana</div>
+        <div class="testimonial">"Recomiendo 100%, atención excelente." - Juliana</div>
+      </div>
+    </section>
+
+    <section id="reserva" class="glassmorph" data-aos="fade-up">
+      <h2>Reserva una Cita</h2>
+      <form class="form-reserva">
+        <label for="cliente">Nombre:</label>
+        <input type="text" id="cliente" name="cliente" required />
+
+        <label for="servicio">Servicio:</label>
+        <select id="servicio" name="servicio" required>
+          <option value="">Selecciona uno</option>
+          <option value="corte">Corte y Peinado</option>
+          <option value="color">Coloración</option>
+          <option value="manicura">Manicura</option>
+          <option value="maquillaje">Maquillaje</option>
+        </select>
+
+        <label for="fecha">Fecha:</label>
+        <input type="date" id="fecha" name="fecha" required />
+
+        <label for="hora">Hora:</label>
+        <input type="time" id="hora" name="hora" required />
+
+        <button type="submit" class="btn-primary">Confirmar Reserva</button>
+      </form>
+    </section>
+
+    <section id="equipo" data-aos="fade-right">
+      <h2>Conoce al Equipo</h2>
+      <p>Estilistas certificados con pasión por el arte afro.</p>
+    </section>
+
+    <section id="contacto" data-aos="fade-left">
+      <h2>Contáctanos</h2>
+      <p>📍 Calle Belleza 123, Ciudad</p>
+      <p>📞 (555) 123-4567</p>
+      <p>✉️ contacto@afrolab.com</p>
+      <form class="form-contacto">
+        <input type="text" placeholder="Tu nombre" required />
+        <textarea placeholder="Tu mensaje" required></textarea>
+        <button type="submit" class="btn-secondary">Enviar</button>
+      </form>
+    </section>
+
+  <section id="barbershop" data-aos="fade-up">
+  <h2>🔗 BARBERSHOP MOISES</h2>
+  <p>Descubre nuestra barbería asociada</p>
+  <a href="indss.htm" class="btn-outline" target="_blank">Visitar MAMERCO</a>
+</section>
+
+  <a href="https://wa.me/573125775491?text=Hola%20me%20interesa%20un%20servicio%20de%20belleza" class="whatsapp-float" target="_blank">
+    <img src="https://icongr.am/fontawesome/whatsapp.svg?size=40&color=ffffff" alt="WhatsApp" />
+  </a>
+
+  <footer class="footer glassmorph">
+    <p>&copy; 2025 AFROLAB. Todos los derechos reservados.</p>
+    <div class="redes">
+      <a href="https://www.facebook.com/share/17ChMw6Pge/?mibextid=wwXIfr">Facebook</a>
+      <a href="#">Instagram</a>
+      <a href="#">TikTok</a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+    lucide.createIcons();
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileNav = document.getElementById('mobile-nav');
+    menuBtn.addEventListener('click', () => {
+      mobileNav.classList.toggle('active');
+    });
+
+    // Carga animada
+    window.addEventListener('load', () => {
+      document.getElementById('loader').style.display = 'none';
+    });
+  </script>
+</body>
+</html> 
